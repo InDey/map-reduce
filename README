@@ -1,0 +1,17 @@
+1. after unzipping, run make within the proj3 folder.
+- running make will remove the old output.txt file
+2. to run: ./project <inputfile> <n> <b> 
+- the input files are named "input1.txt", 2, or 3
+- the file number go up based off file size.
+- an output.txt file will be created for you to reference 
+the unique word counts.
+
+WARNING: I've found there are segmentation faults that occur
+seldomly. However they do still occasionally occur. They happen
+during my reduce stage.
+
+I also realize my run times scale quite poorly. my algorithm is
+to travers to the end of the list and either add to the end of the
+list or delete the end of it. These algorithms could have been 
+expedited by either storing a pointer to the tail to quickly jump 
+there or to simply add and delete from the head of the list.
